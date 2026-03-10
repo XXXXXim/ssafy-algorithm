@@ -22,15 +22,15 @@
 #         path.pop()
 
 # recur(0)
-
+result = 0
 def recur(cnt, total):
     #이미 10을 넘었으면 이 케이스는 더 볼 필요 x
     #심화: 백트래킹의 원리 
     global result
-    if total > 10:
+    if total > 10: #종료조건
         return
     
-    if cnt == 3:
+    if cnt == 3:    #재귀호출
     #만약경로합이 10 이하라면
         if total <= 10: 
             result +=1 
@@ -42,3 +42,4 @@ def recur(cnt, total):
 
 
 recur(0,0)
+print(result)
