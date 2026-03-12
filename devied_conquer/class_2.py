@@ -7,7 +7,7 @@ def quicksort(A,l,r):
         p = patition(A,l,r)
         #기준원소(피벗)의 왼쪽을 다시 퀵정렬
         quicksort(A,l,p-1)
-        #기준원소(피벗)의 오른쪽을 다시 퀵정렬
+        #기준원소(피벗)의 오른쪽을 다시 퀵정렬ㅔㅁ
         quicksort(A, p+1, r)
 
 def patition(A, l, r):
@@ -24,12 +24,12 @@ def patition(A, l, r):
     i = l
     # j는 오른쪽으로 시작해서 작은애를 찾을때까지 왼쪽으로 간다
     j = r
-    #i와 ㅓ가 교차하기 전까지 찾으삼
+    #i와 j가 교차하기 전까지 찾으삼
     while i <=j:
-        #i는 왼쪽에서 +1
+        #i는 왼쪽에서 +1 대장보다큰놈찾기
         while i<=j and A[i] <=p:
             i+=1    
-        #j는 오른쪽에서 -1
+        #j는 오른쪽에서 -1 대장보다 작은놈 찾기
         while i <= j and A[j] >= p:
             j -=1
 
