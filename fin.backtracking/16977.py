@@ -25,7 +25,7 @@ for tc in range(1, T + 1):
 
         # 2. 재귀 호출 (Branching)
         # 현재 정류장에서 갈 수 있는 최대 칸수(lst[idx])부터 1칸까지 역순으로 탐색한다.
-        # 인자 4개 오류 수정: range(시작, 끝(포함 안 됨), 증감)
+       
         for i in range(lst[idx], 0, -1):
             # i만큼 이동해서 다음 정류장으로 가고, 충전 횟수를 1 증가시킨다.
             backtracking(idx + i, cnt + 1)
